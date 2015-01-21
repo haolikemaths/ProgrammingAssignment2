@@ -31,7 +31,7 @@ if(!is.null(m)) {
 return(m)
 }
 data <- x$get()
-m <- inverse(data, ...)
+m <- solve(data)
 x$setinverse(m)
 m
 }
